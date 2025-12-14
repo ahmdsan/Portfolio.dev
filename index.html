@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./img/jogja.jpg">
+</head>
+
+<body>
+    <header class="main-header" data-aos="fade-down" data-aos-duration="1000">
+        <a href="#" class="teks">Ahmd<span class="brown">san</span></a>
+        <ul class="main-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skill</a>
+            <a href="#tugas">Task</a>
+            <a href="#kontak">Kontak</a>
+            <div class="toggle-switch">
+                <label class="switch-label">
+                    <input type="checkbox" class="checkbox" onclick="document.body.classList.toggle('light')">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </ul>
+    </header>
+
+    <section class="first-look">
+        <div class="h1" data-aos="fade-right" data-aos-duration="2000">
+            <h1>NO KOMEN<span class="brown">.DEV</span> <br>🤙</h1>
+        </div>
+        <div class="div-brown" style=" 
+        width: 100%; 
+        height: 5px;
+        margin: auto;
+        margin-bottom: 50px;
+        " data-aos="fade-left" data-aos-duration="2000"></div>
+    </section>
+
+    <section class="opening" id="home">
+        <div class="main-opening">
+            <div class="text">
+                <h1>HI THERE,</h1>
+                <h1>IT'S <span style="text-decoration: underline;" class="brown">HASAN</span> HERE !</h1>
+                <p><span class="scnd-multiple-text"></span></p>
+                <a href="#about" class="btn-start">Lets get started</a>
+            </div>
+            <div class="img-opening">
+                <img src="./img/jogja.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 id="teks">Who <span class="brown">am i?</span></h1>
+        <div class="div-brown" style=" 
+        width: 5%; 
+        height: 5px;
+        margin: auto;
+        margin-bottom: 50px;
+        "></div>
+        <div class="container-about">
+            <div class="img-about">
+                <img src="./img/FOTO GOA.jpg" alt="">
+            </div>
+
+            <div class="text-about">
+                <div class="about-text">
+                    <h1>Hasan Ahmad Athari</h1>
+                    <h3><span class="multiple-text"></span>
+                    </h3>
+                    <p>Hello everyone, let me introduce myself. My name is Hasan Ahmad Athari. I was born on July 3rd,
+                        2009, in Bekasi. I am currently studying in <strong>HSI BOARDING SCHOOL</strong>, which is
+                        located in
+                        Sukabumi. My hobbies are playing futsal, basketball, and ping pong. I have a strong interest in
+                        IT and photography, which I am currently developing here. I hope that in the future I can become
+                        a better person, and my motto is,<br><strong>’’DON’T BE SHY’’</strong></p>
+                </div>
+                <div class="div-brown" style="
+                width: 100%; 
+                height: 5px;
+                margin-top: 50px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson" id="skill">
+        <h1 id="teks">What i <span class="brown">learned</span> </h1>
+        <div class="div-brown" style="
+        width: 5%; 
+        height: 5px;
+        margin: auto;
+        margin-bottom: 50px;
+        "> </div>
+        <div class="lesson-container">
+            <div class="lesson-card">
+                <img src="./img/html.svg" alt="" class="icon">
+                <h3>HTML5</h3>
+                <p>Selama satu semester belajar HTML, saya mulai dari tag dasar, lalu nyoba layout, bikin halaman kecil,
+                    sampai akhirnya paham struktur web dan berani eksperimen sendiri.
+                </p>
+                <a href="https://id.wikipedia.org/wiki/HTML" class="btn" target="_blank">Read more</a>
+            </div>
+            <!-- css -->
+            <div class="lesson-card">
+                <img src="./img/css.svg" alt="" class="icon">
+                <h3>CSS</h3>
+                <p>Selama satu semester belajar CSS, saya belajar ngatur warna, layout, spacing, sampai bikin desain
+                    lebih rapi. Pelan-pelan saya mulai paham struktur dan estetikanya.</p>
+                <a href="https://id.wikipedia.org/wiki/CSS" class="btn" target="_blank">Read more</a>
+            </div>
+            <!-- js -->
+            <div class="lesson-card">
+                <img src="./img/js.svg" alt="" class="icon">
+                <h3>JAVASCRIPT</h3>
+                <p>Satu semester belajar JavaScript membuat saya paham dasar logika, variabel, fungsi, dan event.
+                    Awalnya
+                    bingung, tapi lama-lama seru karena kodenya bisa bikin web lebih hidup.</p>
+                <a href="https://id.wikipedia.org/wiki/JavaScript" class="btn" target="_blank">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="tugas" id="tugas">
+        <h3 id="teks">My <span class="brown">Work</span></h3>
+        <div class="div-brown" style="
+        width: 5%; 
+        height: 5px;
+        margin: auto;
+        margin-bottom: 50px;
+        "> </div>
+        <!-----------------------------------------------English section----------------------------------------------------------------->
+        <h3 class="title-tugas"><span class="underline">English</span></h3>
+
+        <div class="tugas-container">
+            <div class="tugas-card">
+                <img src="./img/Every Story Begins With An Action.png" alt="" class="img-tugas">
+                <h6 class="card-title">Short Movie</h6>
+                <p class="card-text">Tugas membuat short movie berbahasa inggris dengan tema bahaya bullying</p>
+                <button class="btn-tugas" id="button"
+                    data-link="https://drive.google.com/drive/folders/1y1oLStsZ25MnLGBBtbzgiYxh1joGJkX7?usp=drive_link"
+                    onclick="openLinkInNewTab(this)">Click here </button>
+            </div>
+            <!--  -->
+            <div class="tugas-card">
+                <img src="./img/Vocab-Inggris.png" alt="" class="img-tugas">
+                <h6 class="card-title">Poster</h6>
+                <p class="card-text">Tugas membuat poster vocabularies dan juga grammar </p>
+                <button class="btn-tugas" id="button"
+                    data-link="https://drive.google.com/drive/folders/1wt-qi8Fa6MPfX9tyVV-GkiQZiqIYZwtA?usp=drive_link"
+                    onclick="openLinkInNewTab(this)">Click here </button>
+            </div>
+            <!--  -->
+            <div class="tugas-card">
+                <img src="./img/speaking.jpg" alt="" class="img-tugas">
+                <h6 class="card-title">Speaking</h6>
+                <p class="card-text">Disini saya membuat beberapa vidio speaking dengan tema yg berbeda-beda </p>
+                <button class="btn-tugas" id="button"
+                    data-link="https://drive.google.com/drive/folders/1TC-hZkbLweiZ-smsurAMlAbzIISRXsSY?usp=drive_link"
+                    onclick="openLinkInNewTab(this)">Click here </button>
+            </div>
+        </div>
+
+        <!------------------------------------------Nahwu Section--------------------------------------------------------------------->
+
+        <h3 class="title-tugas"><span class="underline">Nahwu</span></h3>
+
+        <div class="tugas-container">
+            <div class="tugas-card">
+                <img src="./img/i'rob.png" alt="" class="img-tugas">
+                <h6 class="card-title">I'rob Qur'an</h6>
+                <p class="card-text">Tugas membuat vidio i'rob Al-Qur'an</p>
+                <button class="btn-tugas" id="button"
+                    data-link="https://drive.google.com/drive/folders/1-Oggdb93Qf1DyCt_ILDnhODeyCbxbSvL?usp=drive_link"
+                    onclick="openLinkInNewTab(this)">Click here </button>
+            </div>
+            <!--  -->
+            <div class="tugas-card">
+                <img src="./img/I’rob Al-quran.png" alt="" class="img-tugas">
+                <h6 class="card-title">Poster</h6>
+                <p class="card-text">Tugas membuat poster i'rob </p>
+                <button class="btn-tugas" id="button"
+                    data-link="https://drive.google.com/drive/folders/180hfDqrkHorVl1gzdh5KKNf38YZZHpKF?usp=drive_link"
+                    onclick="openLinkInNewTab(this)">Click here </button>
+            </div>
+        </div>
+
+        <!--------------------------------------------------------IT Section-------------------------------------------------------------------->
+
+
+
+        <h3 class="title-tugas"><span class="underline">IT</span></h3>
+
+        <div class="tugas-container">
+            <div class="tugas-card">
+                <img src="./img/kalkulator.png" alt="" class="img-tugas">
+                <h6 class="card-title">Kalkulator</h6>
+                <p class="card-text">Disini saya membuat kalkulator sederhana menggunakan JAVASCRIPT</p>
+                <button class="btn-tugas" id="button" data-link="https://ahmdsan.github.io/kalkulator-project/"
+                    onclick="openLinkInNewTab(this)">Click here </button>
+            </div>
+
+            <!--  -->
+
+            <div class="tugas-card">
+                <img src="./img/zakat.png" alt="" class="img-tugas">
+                <h6 class="card-title">Kalkulator-zakat</h6>
+                <p class="card-text">Kenalin, ini kalkulator zakat emasku buat ngitung zakat tanpa ribet </p>
+                <button class="btn-tugas" id="button" data-link="https://ahmdsan.github.io/Kalkulator-zakat/"
+                    onclick="openLinkInNewTab(this)">Click here </button>
+            </div>
+
+            <!--  -->
+
+            <div class="tugas-card">
+                <img src="./img/traffic-light.png" alt="" class="img-tugas">
+                <h6 class="card-title">Traffic light</h6>
+                <p class="card-text">Kenalin, ini project simulasi traffic light saya, buat belajar logika lampu </p>
+                <button class="btn-tugas" id="button" data-link="https://ahmdsan.github.io/lampu-merah-project/"
+                    onclick="openLinkInNewTab(this)">Click here </button>
+            </div>
+
+            <!--  -->
+
+            <div class="tugas-card">
+                <img src="./img/landing-page.png" alt="" class="img-tugas">
+                <h6 class="card-title">Landing page</h6>
+                <p class="card-text">Kenalin, ini landing page buat nampilin project dan info singkat </p>
+                <button class="btn-tugas" id="button" data-link="https://ahmdsan.github.io/landing-page-iphone/"
+                    onclick="openLinkInNewTab(this)">Click here </button>
+            </div>
+            <!--  -->
+            <div class="tugas-card">
+                <img src="./img/todo.png" alt="" class="img-tugas">
+                <h6 class="card-title">Todo-list</h6>
+                <p class="card-text">Kenalin, ini todo list sederhana buat nyatet tugas biar gak kelupaan ✅ </p>
+                <button class="btn-tugas" id="button" data-link="https://ahmdsan.github.io/todo-list-project/"
+                    onclick="openLinkInNewTab(this)">Click here </button>
+            </div>
+            <!--  -->
+            <div class="tugas-card">
+                <img src="./img/validasi.png" alt="" class="img-tugas">
+                <h6 class="card-title">Validasi SIM</h6>
+                <p class="card-text">Kenalin, ini fitur validasi SIM buat ngecek kevalidan untuk memiliki SIM 🪪 </p>
+                <button class="btn-tugas" id="button" data-link="https://ahmdsan.github.io/validasi-sim-project/"
+                    onclick="openLinkInNewTab(this)">Click here </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="kontak" id="kontak">
+        <h3 id="teks-kontak">Let's get <span class="brown" style="text-decoration: underline;">Closer!</span></h3>
+        <p class="kontak-text">Got a question or idea? <br>Just contact me anytime.</p>
+        <div class="container-kontak">
+            <div class="card-kontak">
+                <a href="https://wa.me/6285880038137" target="_blank"><img src="./img/whats-app-svgrepo-com.svg"
+                        alt=""></a>
+            </div>
+
+            <div class="card-kontak">
+                <a href="https://www.instagram.com/ahmd_san.id/" target="_blank"><img
+                        src="./img/instagram-svgrepo-com.svg" alt=""></a>
+            </div>
+
+            <div class="card-kontak">
+                <a href="https://github.com/ahmdsan" target="_blank"><img src="./img/github-svgrepo-com (3).svg"
+                        alt=""></a>
+            </div>
+
+            <div class="card-kontak">
+                <a href="https://www.youtube.com/@AhmdsanHSI" target="_blank"><img src="./img/youtube-svgrepo-com.svg"
+                        alt=""></a>
+            </div>
+        </div>
+        <div class="div-brown" style="
+        width: 10%; 
+        height: 3px;
+        margin: auto;
+        margin-bottom: 50px;
+        "> </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>Dibuat dengan HTML, CSS, dan sedikit taburan JS</p>
+        <p style="margin-top: 5px;">&copy;Copyright by Ahmd_san</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./script.js"></script>
+
+    <style data-typed-js-cursor-css="true">
+        .typed-cursor {
+            opacity: 1;
+            font-size: 42px;
+            color: #B87C4C;
+        }
+
+        .typed-cursor.typed-cursor--blink {
+            animation: typedjsBlink 0.7s infinite;
+            -webkit-animation: typedjsBlink 0.7s infinite;
+            animation: typedjsBlink 0.7s infinite;
+        }
+
+        @keyframes typedjsBlink {
+            50% {
+                opacity: 0.0;
+            }
+        }
+
+        @-webkit-keyframes typedjsBlink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</body>
+
+</html>

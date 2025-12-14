@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400;500;600;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+body {
+    font-family: "inter", sans-serif;
+    transition: 0.3s ease-out;
+    background: black;
+}
+
+:root {
+    --main-color: #b87c4c;
+    --bg-color: #000;
+}
+
+.first-look {
+    font-size: 4rem;
+    text-align: center;
+    padding: 90px;
+    font-family: "ubuntu";
+    color: white;
+    margin-bottom: 8rem;
+    margin-top: 2rem;
+}
+
+.main-header {
+    border-bottom: 1px solid #B87C4C;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+}
+
+.teks {
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    padding: 0 5px;
+    margin-left: 20px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-nav a:hover {
+    color: #B87C4C;
+    transition: 0.3s ease-in-out;
+    border-bottom: 1px solid #B87C4C;
+}
+
+/* Tombol */
+.toggle-switch {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    --light: #d8dbe0;
+    --dark: #28292c;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+}
+
+.switch-label {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark);
+    border-radius: 25px;
+    cursor: pointer;
+    border: 3px solid var(--dark);
+}
+
+.checkbox {
+    position: absolute;
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.checkbox:checked~.slider {
+    background-color: var(--light);
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+    box-shadow: inset 12px -4px 0px 0px var(--light);
+    background-color: var(--dark);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.checkbox:checked~.slider::before {
+    -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+    background-color: var(--dark);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/* opening */
+
+.opening {
+    margin-bottom: 200px;
+    padding: 80px;
+    text-align: center;
+    justify-content: space-around;
+
+}
+
+.main-opening {
+    display: flex;
+}
+
+
+.main-opening p {
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.main-opening h1 {
+    font-size: 72px;
+    margin-top: 30px;
+    color: white;
+}
+
+.img-opening img {
+    width: 35vw;
+    height: 35vw;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 30px;
+    box-shadow: 0 1px 25px 0px #B87C4C;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.img-opening img {
+    animation: floatImage 4s ease-in-out infinite;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+
+}
+
+.img-opening img:hover {
+    box-shadow: 0 0 25px var(--main-color),
+        0 0 35px var(--main-color),
+        0 0 55px var(--main-color);
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.btn-start {
+    display: inline-block;
+    background: #B87C4C;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #B87C4C;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.btn-start:hover {
+    color: #d49c6d;
+    background: none;
+
+}
+
+/* about section */
+
+.container-about {
+    display: flex;
+    margin: auto;
+    box-shadow: 0px 0px 10px 5px #B87C4C;
+    height: 500px;
+    width: 90%;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.about img {
+    width: 30vw;
+    height: 30vw;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 30px;
+    box-shadow: 0 1px 25px 5px #B87C4C;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#teks {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 10px;
+    /* text-decoration: underline; */
+    color: white;
+    margin-bottom: 4px;
+}
+
+.brown {
+    color: #B87C4C;
+}
+
+.about-text h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: white;
+}
+
+.about-text p {
+    font-size: 24px;
+    font-family: "Ubuntu";
+    margin-top: 20px;
+    color: white;
+}
+
+.multiple-text {
+    font-size: 42px;
+    font-weight: 500px;
+    margin-bottom: 20px;
+    color: #B87C4C;
+}
+
+/* lesson */
+
+.lesson {
+    padding: 80px;
+}
+
+.lesson-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+}
+
+.icon {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.lesson-container .lesson-card {
+    flex: 1 1 30rem;
+    background: #d3d3d3;
+    padding: 5rem 5px 5rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .3rem solid black;
+    transition: .5s ease;
+}
+
+.lesson-container .lesson-card:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.lesson-card h3 {
+    font-size: 2.6rem;
+    font-family: "ubuntu";
+}
+
+.lesson-card p {
+    font-size: 1.2rem;
+    margin: 1rem 0 3rem;
+}
+
+.btn {
+    padding: 1rem 2rem .8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    border: 2px solid #B87C4C;
+}
+
+.btn:hover,
+.btn-tugas:hover {
+    background: none;
+    color: black;
+}
+
+/* Tugas section */
+.title-tugas {
+    font-family: 'ubuntu', sans-serif;
+    color: #fff;
+    font-size: 50px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.underline {
+    border-bottom: 2px solid #B87C4C;
+}
+
+.tugas-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.tugas-card {
+    background-color: #404040;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding: 3px;
+    border-radius: 8px;
+    width: 400px;
+    height: 550px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.tugas-card:hover {
+    box-shadow:
+        0 0 25px var(--main-color),
+        0 0 35px var(--main-color),
+        0 0 55px var(--main-color);
+    transform: translateY(-10px);
+
+}
+
+.card-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.card-text {
+    color: white;
+    font-size: large;
+}
+
+.img-tugas {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    height: 300px;
+    object-fit: cover;
+}
+
+.btn-tugas {
+    padding: 1rem 2rem .8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    border: 2px solid #B87C4C;
+    color: #1d1611;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.btn-tugas:hover {
+    background: none;
+    color: white;
+}
+
+/* kontak section */
+
+#teks-kontak {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 40px;
+    /* text-decoration: underline; */
+    color: white;
+    margin-bottom: 4px;
+}
+
+/* kontak */
+
+.container-kontak {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    /* margin-bottom: 10px; */
+    padding: 10px 0;
+}
+
+.kontak img {
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+    box-sizing: border-box;
+}
+
+.card-kontak {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-kontak:hover {
+    transform: scale(1.2)translateY(-10px);
+    background-color: #b87c4c;
+    box-shadow: 0 0 25px #b87c4c;
+}
+
+.kontak-text {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "ubuntu";
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-footer {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #404040;
+    color: #ddd;
+}
+
+.div-brown {
+    background-color: #B87C4C;
+}
+
+/* ---------------------------------------------------------body light section----------------------------------------------------------------------------- */
+
+body.light {
+    background: white;
+}
+
+body.light .main-nav a,
+body.light .teks {
+    color: black;
+}
+
+body.light .main-nav a:hover {
+    color: gold;
+    transition: 0.3s ease-in-out;
+    border-bottom: 1px solid gold;
+}
+
+body.light .main-header {
+    border-bottom: 1px solid black;
+}
+
+body.light .main-opening h1,
+body.light .main-opening p,
+body.light #teks,
+body.light .about-text h1,
+body.light .about-text p,
+body.light .title-tugas {
+    color: black;
+}
+
+body.light .lesson-container .lesson-card {
+    flex: 1 1 30rem;
+    background: #d3d3d3;
+    padding: 5rem 5px 5rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .3rem solid white;
+    transition: .5s ease;
+}
+
+body.light .lesson-container .lesson-card:hover {
+    border-color: gold;
+    transform: scale(1.02);
+}
+
+body.light .tugas-card {
+    background-color: #d3d3d3;
+}
+
+body.light .tugas-card h6 {
+    color: #000;
+}
+
+body.light .tugas-card p {
+    color: #000;
+}
+
+body.light .btn {
+    background: black;
+    border: 2px solid black;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+body.light .btn:hover {
+    background: none;
+    color: black;
+}
+
+body.light .btn-tugas {
+    background: black;
+    border: 2px solid black;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+body.light .btn-tugas:hover {
+    background: none;
+    color: black;
+}
+
+body.light #teks-kontak,
+body.light .kontak-text {
+    color: #000;
+}
+
+body.light .main-footer {
+    background-color: #d3d3d3;
+    color: #000;
+}
+
+body.light .brown {
+    color: gold;
+}
+
+body.light .div-brown {
+    background-color: gold;
+}
+
+body.light .underline {
+    border-bottom: 2px solid gold;
+
+}
+
+body.light .img-opening img {
+    box-shadow: 0 1px 25px 0px gold;
+
+}
+
+body.light .img-opening img:hover {
+    box-shadow: 0 0 25px gold,
+        0 0 35px gold,
+        0 0 55px gold;
+}
+
+body.light .btn-start {
+    background-color: #000;
+    color: white;
+    border: 2px solid #000;
+    transition: all 0.5s ease;
+}
+
+body.light .btn-start:hover {
+    color: #000;
+    background: none;
+}
+
+body.light .about img,
+body.light .container-about {
+    box-shadow: 0 1px 25px 5px gold;
+
+}
+
+body.light .multiple-text {
+    color: black;
+}
+
+body.light .typed-cursor {
+    color: black;
+}
+
+body.light .tugas-card:hover {
+    box-shadow:
+        0 0 25px gold,
+        0 0 35px gold,
+        0 0 55px gold;
+    transform: translateY(-10px);
+}
+
+body.light .card-kontak {
+    background-color: #a1a1a1;
+}
+
+body.light .card-kontak:hover {
+    transform: scale(1.2)translateY(-10px);
+    background-color: gold;
+    box-shadow: 0 0 25px gold;
+}
+
+body.light .first-look {
+    color: #000;
+}
